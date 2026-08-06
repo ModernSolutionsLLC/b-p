@@ -14,7 +14,7 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "Bid-Pulse — Turn RFQ PDFs Into Priced Trade Proposals" },
       {
         property: "og:description",
-        content: "Itemized takeoffs, live margin math, and client-ready proposals in minutes.",
+        content: "Bid-Pulse converts RFQ specs and work scopes into itemized, marked-up proposals for electrical, HVAC, plumbing and drywall contractors.",
       },
     ],
   }),

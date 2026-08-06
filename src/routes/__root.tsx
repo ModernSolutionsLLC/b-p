@@ -79,20 +79,24 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Bid-Pulse — RFQ to Itemized Contractor Proposals" },
+      { title: "Bid-Pulse — Turn RFQ PDFs Into Priced Trade Proposals" },
       {
         name: "description",
         content:
-          "Bid-Pulse turns RFQ specs and work scopes into itemized, priced proposals for electrical, HVAC, plumbing and drywall contractors.",
+          "Bid-Pulse converts RFQ specs and work scopes into itemized, marked-up proposals for electrical, HVAC, plumbing and drywall contractors.",
       },
       { name: "author", content: "Bid-Pulse" },
-      { property: "og:title", content: "Bid-Pulse — RFQ to Itemized Contractor Proposals" },
+      { property: "og:title", content: "Bid-Pulse — Turn RFQ PDFs Into Priced Trade Proposals" },
       {
         property: "og:description",
-        content: "Turn RFQ specs into priced, editable trade proposals in minutes.",
+        content: "Bid-Pulse converts RFQ specs and work scopes into itemized, marked-up proposals for electrical, HVAC, plumbing and drywall contractors.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Bid-Pulse — Turn RFQ PDFs Into Priced Trade Proposals" },
+      { name: "twitter:description", content: "Bid-Pulse converts RFQ specs and work scopes into itemized, marked-up proposals for electrical, HVAC, plumbing and drywall contractors." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/db43ab85-fdb5-4664-9e80-95295ac73b18/id-preview-6098364a--cb48841f-0c7f-4bea-a6e7-df18126e4506.lovable.app-1786018877793.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/db43ab85-fdb5-4664-9e80-95295ac73b18/id-preview-6098364a--cb48841f-0c7f-4bea-a6e7-df18126e4506.lovable.app-1786018877793.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
