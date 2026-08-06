@@ -17,8 +17,8 @@ export function ProcessingModal({
   return (
     <Dialog open={open}>
       <DialogContent
-        showCloseButton={false}
-        className="border-border bg-surface sm:max-w-lg"
+        className="border-border bg-surface [&>button]:hidden sm:max-w-lg"
+
         onInteractOutside={(e) => e.preventDefault()}
         onEscapeKeyDown={(e) => e.preventDefault()}
       >
