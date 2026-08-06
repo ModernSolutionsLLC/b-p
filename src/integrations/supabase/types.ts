@@ -14,7 +14,113 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      line_items: {
+        Row: {
+          category: string
+          confidence: number
+          created_at: string
+          description: string
+          id: string
+          markup: number
+          project_id: string
+          quantity: number
+          sort_order: number
+          total_price: number
+          unit: string
+          unit_cost: number
+        }
+        Insert: {
+          category?: string
+          confidence?: number
+          created_at?: string
+          description?: string
+          id?: string
+          markup?: number
+          project_id: string
+          quantity?: number
+          sort_order?: number
+          total_price?: number
+          unit?: string
+          unit_cost?: number
+        }
+        Update: {
+          category?: string
+          confidence?: number
+          created_at?: string
+          description?: string
+          id?: string
+          markup?: number
+          project_id?: string
+          quantity?: number
+          sort_order?: number
+          total_price?: number
+          unit?: string
+          unit_cost?: number
+        }
+        Relationships: [
+          {
+            foreignKeyName: "line_items_project_id_fkey"
+            columns: ["project_id"]
+            isOneToOne: false
+            referencedRelation: "projects"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      profiles: {
+        Row: {
+          company_name: string | null
+          created_at: string
+          default_hourly_rate: number
+          default_markup: number
+          onboarded: boolean
+          user_id: string
+        }
+        Insert: {
+          company_name?: string | null
+          created_at?: string
+          default_hourly_rate?: number
+          default_markup?: number
+          onboarded?: boolean
+          user_id: string
+        }
+        Update: {
+          company_name?: string | null
+          created_at?: string
+          default_hourly_rate?: number
+          default_markup?: number
+          onboarded?: boolean
+          user_id?: string
+        }
+        Relationships: []
+      }
+      projects: {
+        Row: {
+          client_name: string
+          created_at: string
+          id: string
+          status: string
+          title: string
+          user_id: string
+        }
+        Insert: {
+          client_name?: string
+          created_at?: string
+          id?: string
+          status?: string
+          title?: string
+          user_id: string
+        }
+        Update: {
+          client_name?: string
+          created_at?: string
+          id?: string
+          status?: string
+          title?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
